@@ -1,0 +1,123 @@
+/* Header */
+body{
+    background-color: #282c34;
+}
+
+.header{
+    min-height: 24vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* font-size: calc(10px + 2vmin); */
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    
+}
+
+/* Search */
+
+.search-box{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #3e4a5a;
+    /* 2f3640 */
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #3e4a5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    text-decoration: none;
+}
+
+/* Buttons */
+
+.button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.button-btn{
+    width: 8%;
+    height: 1.75rem;
+    margin: 0 2%;
+    font-size: 1.15rem;
+    background-color: #3e4a5a;
+}
+
+.button-btn:hover{
+    background-color: thistle;
+}
+
+/* ImagesName */
+
+.imagesName{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    
+}
+
+/* Images */
+.images-box-bro{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.images-box{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3e4a5a;
+    border-radius: 5px;
+    box-shadow: 0 0 1.5em rgba(89, 192, 240, 0.3);
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 23%;
+    height: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

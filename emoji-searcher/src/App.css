@@ -1,0 +1,104 @@
+body{
+  font-family: Verdana, Tahoma, sans-serif;/*  Poppins */
+  font-size: 1.5rem;
+  background-color: #222;
+}
+
+.header {
+  display: flex;
+  justify-content: right;
+  margin-right: 25%;
+  /* margin-top: 50px; */
+  flex-grow: 6;
+  margin-top: 21%;
+}
+
+.form_group{
+  display: block;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 300px;
+  position: fixed;
+}
+
+.form_field {
+  font-family: Verdana, Tahoma, sans-serif;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding:7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form_label{
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b
+}
+
+.form_field:placeholder-shown ~ .form_label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 22px;
+}
+
+.form_field:focus{
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #ff0062, #00ffff);
+  border-image-slice: 1;
+}
+
+.form_field:focus ~ .form_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #2afadf;
+  font-weight: 700;
+}
+
+
+
+
+
+
+.emojiList {
+  display: flex;
+  justify-content: left;
+  margin-left: 20%;
+  margin-top: 30px;
+  flex-grow: 6;
+}
+
+.copy{
+  float: right;
+  position: relative;
+  top: 6px;
+  right: 1px;
+  color: #ccc;
+  font-size: 1rem;
+  display: none;
+}
+
+
+.emojiRow:hover .copy{
+  display: inline-block;
+}
+
+
+.emojiRow:hover{
+  border: solid rgb(10, 30, 53) 3px;
+  background-color: #023b3b;
+  border-radius: 10px;
+}
